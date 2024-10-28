@@ -1,9 +1,9 @@
  echo "Enter your Salary:"
     read salary
-    ##if (( salary == 15000)); then
-##	tax=$((salary *2/100))
-##	echo "Tax: 2% ($tax)"
-    if (( salary < 15000 )); then
+    if (( salary == 15000)); then
+	tax=$((salary *2/100))
+	echo "Tax: 2% ($tax)"
+    elif (( salary < 15000 )); then
         echo "No tax"
     elif (( salary <= 30000 )); then
         tax=$((salary * 5 / 100))
